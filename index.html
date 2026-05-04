@@ -6,6 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Restaurant Africain</title>
@@ -13,7 +15,7 @@
 <body> 
     <header class="header">
         <div class="logo">
-            <img src="images/logo.png" alt="Logo du site"/>
+            <img src="logo.png" alt="Logo du site"/>
 	</div> 
     <nav>
         <a href="index.html">Accueil</a>
@@ -38,72 +40,95 @@
     <h2>Nos plats vedettes</h2>
     <div class="plats">
         <div class="plat">
-            <img src="images/thieb.jpg" alt="thiebou dieune">
+            <img src="thieb.jpg" alt="thiebou dieune">
             <h3>Thiebou Dieune</h3>
             <p>2000 FCF</p>
         </div>
 
         <div class="plat">
-            <img src="images/mafee.jpg" alt="mafe yapp">
+            <img src="mafee.jpg" alt="mafe yapp">
             <h3>Mafee Yapp</h3>
             <p>3500 FCFA</p>
         </div>
 
         <div class="plat">
-            <img src="images/mbakhale.jpg" alt="Mbakhale saloum">
+            <img src="mbakhale.jpg" alt="Mbakhale saloum">
             <h3>Mbakhalou Saloum</h3>
             <p>3000 FCFA</p>
         </div>
     </div>
 </section>
  <section class="temoignages">
-    <h2>Avis de nos clients</h2>
+    <div class="container">
+        <p class="section-subtitle">Ce qu'ils disent de nous</p>
+        <h2 class="section-title">Avis de nos clients</h2>
+        
+        <div class="container-avis">
+            <!-- Avis 1 -->
+            <div class="avis-card">
+                <div class="avis-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="avis-content">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Très bon restaurant ! Les plats sont délicieux. Les épices sont parfaitement dosées et l'ambiance nous transporte directement au Sénégal. Je recommande vivement !</p>
+                </div>
+                <div class="avis-author">
+                    <img src="khadija.jpg" alt="Khadija M.">
+                    <div class="author-info">
+                        <h4>Khadija M.</h4>
+                        <span>Cliente fidèle</span>
+                    </div>
+                </div>
+            </div>
 
-    <div class="container-avis">
+            <!-- Avis 2 -->
+            <div class="avis-card">
+                <div class="avis-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="avis-content">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Une expérience culinaire absolument incroyable ! Le thiéboudienne est digne de celui de la maison, et l'accueil nous a fait nous sentir comme chez nous. À recommander sans hésiter !</p>
+                </div>
+                <div class="avis-author">
+                    <img src="mamadou.jpg" alt="Mamadou K.">
+                    <div class="author-info">
+                        <h4>Mamadou K.</h4>
+                        <span>Gastronome</span>
+                    </div>
+                </div>
+            </div>
 
-        <div class="avis">
-            <span class="guillemet">“</span>
-            <p>Très bon restaurant ! Les plats sont délicieux. Je recommande</p>
-            <img src="images/khadija.jpg" alt="photo de khadija">
-            <h4>Khadija.M</h4>
-            <div class="etoiles">
-               <span>★</span>
-               <span>★</span>
-               <span>★</span>
-               <span>☆</span>
-               <span>☆</span>
-        </div>
-        </div>
-        <div class="avis">
-            <span class="guillemet">“</span>
-            <p>Une expérience culinaire absolument incroyable !
-               Le thiéboudienne est digne de celui de la maison, 
-               et l'accueil nous a fait nous sentir comme chez nous.
-               À recommander sans hésiter !"</p>
-            <img src="images/mamadou.jpg" alt="photo de Mamadou">
-            <h4>Mamadou.K</h4>
-            <div class="etoiles">
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-               <span>★</span>
-          </div>
-        </div>
-        <div class="avis">
-            <span class="guillemet">“</span>
-            <p>Le meilleur restaurant de cuisine sénégalaise que j'ai pu tester à Dakar
-              . Les saveurs sont authentiques, les portions sont généreuses et le personnel est aux petits soins.
-               La touche moderne dans la présentation est très appréciable !</p>
-            <img src="images/maimouna.jpg" alt="photo de Maimouna">
-            <h4>Maimouna.D</h4>
-             <div class="etoiles">
-               <span>★</span>
-               <span>★</span>
-               <span>★</span>
-              <span>★</span>
-              <span>★</span>
-             </div>   
+            <!-- Avis 3 -->
+            <div class="avis-card">
+                <div class="avis-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="avis-content">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Le meilleur restaurant de cuisine sénégalaise que j'ai pu tester à Dakar. Les saveurs sont authentiques, les portions sont généreuses et le personnel est aux petits soins.</p>
+                </div>
+                <div class="avis-author">
+                    <img src="maimouna.jpg" alt="Maimouna D.">
+                    <div class="author-info">
+                        <h4>Maimouna D.</h4>
+                        <span>Blogueuse Food</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -134,6 +159,6 @@
     <i class="bi bi-arrow-up"></i>
   </button>
 </footer>
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

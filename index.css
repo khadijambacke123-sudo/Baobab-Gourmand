@@ -1,37 +1,44 @@
-.header{
-    display:flex;
+.header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
     background-color: #d4a373;
     color: white;
-    border-radius: 10px  10px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
     min-height: 70px;
     gap: 16px;
     flex-wrap: wrap;
 }
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-   background-color: #f5e6d3;
+    background-color: #f5e6d3;
 }
+
 header .logo img {
-    height: 100px; 
-    width: 250px;
+    height: 80px;
+    width: auto;
     display: block;
 }
 
 .header nav {
     display: flex;
-    gap: 28px;
-    position: absolute;
-    left: 60%;
-    transform: translateX(-50%);
+    gap: 20px;
 }
+
 .header a {
     color: white;
     text-decoration: none;
     font-weight: 600;
+    transition: color 0.3s;
 }
+
+.header a:hover {
+    color: #5a3e2b;
+}
+
 .pres {
     margin: 0 0 10px;
     color: #e3ab4b;
@@ -130,34 +137,20 @@ header .logo img {
         transform: translateY(0);
     }
 }
-h1{
-  font-size: 50px;
-}
-
-.header a{
-    color: white;
-    text-decoration: none;
-    margin-left: 0;
-    font-weight: 600;
-
-}
-
 
 .vedettes {
  margin-top: 10px;
-
 }
 
 .vedettes h2 {
     text-align: center;
     font-size: 30px;
     margin-bottom: 12px;
-  margin-top:10px;
-  margin-bottom: 10px;
+    margin-top:10px;
 }
 
 .conteneur{
-    background-image: url("images/plat.jpg");
+    background-image: url("plat.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -165,13 +158,15 @@ h1{
     position: relative;
     height: 480px;
 }
+
 .conteneur::before {
     content: "";
     position: absolute;
     inset: 0;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0.15) 100%);
 }
-.presentation{
+
+.presentation {
     position: absolute;
     z-index: 1;
     margin-left: 50px;
@@ -179,28 +174,26 @@ h1{
     max-width: 500px;
 }
 
-
 .vedettes .plats {
- display: flex;
+    display: flex;
     justify-content: center;
     gap: 16px;
     flex-wrap: wrap;  
     padding: 16px;
-  
 }
 
 .vedettes .plat {
-  background-color:white;
-  width: 300px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  text-align: center;
-  overflow: hidden;
-  transition: transform 0.3s;
-
+    background-color: white;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s;
 }
+
 .plat:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .vedettes .plat img {
@@ -214,242 +207,261 @@ h1{
     font-size: 1.35rem;
     margin-top: 14px;
     margin-bottom: 6px;
+    color: #5a3e2b;
 }
 
 .vedettes .plat p {
     font-size: 1.1rem;
+    color: #d4a373;
+    font-weight: bold;
 }
-
-.plat img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.plat p {
-    color: #d52f;
-}
-
 .temoignages {
-  background-color:#d4a373;
-  padding: 50px 20px;
-  text-align: center;
+    background-color: #fdf7f1;
+    padding: 80px 20px;
+    text-align: center;
 }
 
-.avis-section h2 {
-  font-size: 30px;
-  color: #5a3e2b;
+.section-subtitle {
+    font-family: "Great Vibes", cursive;
+    font-size: 28px;
+    color: #e28b32;
+    margin-bottom: 5px;
+}
+
+.section-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 42px;
+    color: #5a3e2b;
+    margin-bottom: 50px;
+    font-weight: 700;
 }
 
 .container-avis {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.avis {
-  background: #fff;
-  width: 260px;
-  padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  position: relative;
-  transition: transform 0.3s;
+.avis-card {
+    background: #ffffff;
+    width: 350px;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(90, 62, 43, 0.08);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    border: 1px solid rgba(212, 163, 115, 0.1);
 }
 
-.avis:hover {
-  transform: translateY(-8px);
+.avis-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(90, 62, 43, 0.12);
+    border-color: #d4a373;
 }
 
-.guillemet {
-  font-size: 70px;
-  color: #d4a373;
-  position: absolute;
-  top: 10px;
-  left: 15px;
-  opacity: 0.2;
-}
-.avis p {
-  font-size: 14px;
-  color: #444;
-  margin: 20px 0;
+.avis-stars {
+    color: #ffb400;
+    margin-bottom: 20px;
+    font-size: 14px;
 }
 
-.avis img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: 10px 0;
+.avis-content {
+    flex-grow: 1;
+    margin-bottom: 30px;
+    position: relative;
 }
 
-.avis h4 {
-  color: #5a3e2b;
-  margin: 10px 0;
+.avis-content i {
+    font-size: 24px;
+    color: #d4a373;
+    opacity: 0.3;
+    margin-bottom: 15px;
+    display: block;
 }
 
-.etoiles span {
-  color: gold;
-  font-size: 18px;
-  margin: 0 1px;
+.avis-content p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #666;
+    font-style: italic;
 }
 
-.about-section,
-.contact-section {
-  padding: 40px 20px;
+.avis-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 25px;
+    border-top: 1px solid #f5e6d3;
 }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto;
+.avis-author img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fdf7f1;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.author-info h4 {
+    margin: 0;
+    color: #5a3e2b;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.author-info span {
+    font-size: 13px;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
 }
 
 @media (max-width: 768px) {
-  .header {
-    justify-content: center;
-    text-align: center;
-  }
+    .section-title {
+        font-size: 34px;
+    }
+    .avis-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
 
-  h1 {
-    margin-right: 0;
-    width: 100%;
-  }
+    max-width: 900px;
+    margin: 0 auto;
+}
 
-  nav {
-    justify-content: center;
-    gap: 8px;
-  }
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 15px;
+    }
 
-  a {
-    margin-left: 0;
-  }
+    .header nav {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+    }
 
-  .bienvenue {
-    font-size: 34px;
-  }
+    .presentation {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .pres1 {
+        font-size: 45px;
+    }
+
+    .pres2 {
+        font-size: 18px;
+    }
+
+    .vedettes .plat {
+        width: 100%;
+    }
 }
 
 .footer {
-  background: linear-gradient(135deg, #5a3e2b 0%, #4a2f1c 100%);
-  color: white;
-  padding: 32px 22px 16px;
+    background: linear-gradient(135deg, #5a3e2b 0%, #4a2f1c 100%);
+    color: white;
+    padding: 32px 22px 16px;
 }
 
 .footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 20px;
-  max-width: 960px;
-  margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 .footer-box {
-  flex: 1 1 280px;
-  min-width: 240px;
+    flex: 1 1 280px;
+    min-width: 240px;
 }
 
 .footer-box h3 {
-  margin-bottom: 10px;
-  color: #d4a373;
-  letter-spacing: 0.02em;
+    margin-bottom: 10px;
+    color: #d4a373;
 }
 
 .footer-box p,
 .footer-box a {
-  font-size: 14px;
-  color: #eee;
-  text-decoration: none;
-}
-
-.footer-brand p {
-  max-width: 420px;
-  line-height: 1.7;
-}
-
-.footer-tagline {
-  margin-top: 12px;
-  color: #f0d2a0;
-  font-size: 13px;
-  line-height: 1.6;
-}
-
-.footer-social-text {
-  margin: 0 0 12px;
-  max-width: 320px;
-  line-height: 1.7;
-  color: #f1d9ad;
-}
-
-.footer-box ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-box li {
-  margin: 5px 0;
-}
-
-.footer-box a:hover {
-  color: #d4a373;
+    font-size: 14px;
+    color: #eee;
+    text-decoration: none;
 }
 
 .footer-social {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-
-.footer-social-row {
-  justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    gap: 14px;
 }
 
 .footer-social a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.12);
-  color: #eee;
-  text-decoration: none;
-  font-size: 1.1rem;
-  transition: background 0.2s ease, transform 0.2s ease;
-}
-
-.footer-social a i {
-  font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    color: #eee;
+    text-decoration: none;
+    transition: all 0.3s;
 }
 
 .footer-social a:hover {
-  background: rgba(255, 255, 255, 0.22);
-  color: #fff;
-  transform: translateY(-1px);
+    background: rgba(255, 255, 255, 0.22);
+    color: #fff;
+    transform: translateY(-1px);
 }
 
 .footer-bottom {
-  text-align: center;
-  margin-top: 20px;
-  border-top: 1px solid #eee;
-  padding-top: 10px;
-  font-size: 13px;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 10px;
+    font-size: 13px;
 }
+
 #btnTop {
     position: fixed;
-    bottom: 5px;
-    right: 50%;
+    bottom: 20px;
+    right: 20px;
     background: #d4a373;
-    padding: 10px 12px;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border: none;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 25px;
-    
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    z-index: 1000;
 }
-#btnTop.visible {opacity: 1; visibility: visible;}
-#btnTop:hover{ background: #d4a373;
-  transform: translatey(-4px);
-} 
+
+#btnTop.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+#btnTop:hover {
+    background: #5a3e2b;
+    transform: translateY(-4px);
+}

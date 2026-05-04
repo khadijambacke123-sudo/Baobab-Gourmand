@@ -5,33 +5,39 @@ body {
     color: #3e2a1d;
 }
 
-.header{
-    display:flex;
+.header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
     background-color: #d4a373;
     color: white;
-    border-radius: 10px  10px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
     min-height: 70px;
     gap: 16px;
     flex-wrap: wrap;
 }
+
 header .logo img {
-    height: 100px; 
-    width: 250px;
+    height: 80px;
+    width: auto;
     display: block;
 }
+
 .header nav {
     display: flex;
-    gap: 28px;
-    position: absolute;
-    left: 60%;
-    transform: translateX(-50%);
+    gap: 20px;
 }
+
 .header a {
     color: white;
     text-decoration: none;
     font-weight: 600;
+    transition: color 0.3s;
+}
+
+.header a:hover {
+    color: #5a3e2b;
 }
 
 .hero {
@@ -87,16 +93,21 @@ header .logo img {
 }
 
 @media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .header nav {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+    }
+
     .team-img {
         width: 180px;
         height: 180px;
     }
-}
-
-.header a{
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
 }
 
 .footer {
@@ -153,10 +164,6 @@ header .logo img {
   gap: 14px;
 }
 
-.footer-social-row {
-  justify-content: flex-start;
-}
-
 .footer-social a {
   display: inline-flex;
   align-items: center;
@@ -184,19 +191,35 @@ header .logo img {
   padding-top: 10px;
   font-size: 13px;
 }
+
 #btnTop {
     position: fixed;
-    bottom: 5px;
-    right: 50%;
-    position:center;
+    bottom: 20px;
+    right: 20px;
     background: #d4a373;
-    padding: 10px 12px;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border: none;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 18px;
-    
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    z-index: 1000;
 }
-#btnTop.visible {opacity: 1; visibility: visible;}
-#btnTop:hover{ background: #d4a373;
-  transform: translatey(-4px);
-} 
+
+#btnTop.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+#btnTop:hover {
+    background: #5a3e2b;
+    transform: translateY(-4px);
+}
