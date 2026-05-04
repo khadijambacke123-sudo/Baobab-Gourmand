@@ -144,11 +144,33 @@ header .logo img {
 
 .vedettes h2 {
     text-align: center;
-    font-size: 30px;
-    margin-bottom: 12px;
-    margin-top:10px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 38px;
+    color: #5a3e2b;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    font-weight: 700;
 }
 
+@media (min-width: 1200px) {
+    .vedettes .plats {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .vedettes h2 {
+        font-size: 32px;
+        margin-top: 30px;
+    }
+    .vedettes .plats {
+        padding: 15px;
+    }
+    .vedettes .plat {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+}
 .conteneur{
     background-image: url("plat.jpg");
     background-size: cover;
@@ -175,45 +197,97 @@ header .logo img {
 }
 
 .vedettes .plats {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    flex-wrap: wrap;  
-    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .vedettes .plat {
     background-color: white;
-    width: 300px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 7px 20px rgba(0,0,0,0.08);
     text-align: center;
     overflow: hidden;
-    transition: transform 0.3s;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .plat:hover {
-    transform: scale(1.05);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.vedettes .plat-image-container {
+    position: relative;
+    width: 100%;
+    height: 250px; /* Fixed height for consistency */
+    overflow: hidden;
 }
 
 .vedettes .plat img {
     width: 100%;
-    height: 350px;
+    height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 12px 12px 0 0; /* Apply border-radius to top corners */
+    transition: transform 0.4s ease;
+}
+
+.vedettes .plat:hover img {
+    transform: scale(1.05);
+}
+
+.vedettes .plat-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.vedettes .plat:hover .plat-overlay {
+    opacity: 1;
+}
+
+.vedettes .plat-overlay-text {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-shadow: 0 0 8px rgba(0,0,0,0.7);
+}
+
+.vedettes .plat-info {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .vedettes .plat h3 {
-    font-size: 1.35rem;
-    margin-top: 14px;
-    margin-bottom: 6px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.6rem;
+    margin-top: 0;
+    margin-bottom: 8px;
     color: #5a3e2b;
 }
 
 .vedettes .plat p {
-    font-size: 1.1rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
     color: #d4a373;
-    font-weight: bold;
+    font-weight: 700;
+    margin-bottom: 0;
 }
 .temoignages {
     background-color: #fdf7f1;
