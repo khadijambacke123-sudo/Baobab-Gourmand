@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="menu.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Restaurant Africain</title>
+</head>
+<body>
+    <header class="header">
+       <div class="logo">
+            <img src="images/logo.png" alt="Logo du site"/>
+	</div>  
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">A propos</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    </header> 
+
+    <main>
+        <section class=" barre de recherche py-4 bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-search"></i></span>
+                            <input type="text" class="form-control" id="search-input" placeholder="Rechercher un plat...">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="filtres-menu mt-4" role="group" aria-label="Filtrer le menu par catégorie">
+                  <button class="btn-filtre actif" data-filter="tout" type="button">
+                    <i class="bi bi-grid me-1"></i>Tout
+                  </button>
+                  <button class="btn-filtre" data-filter="entree" type="button">
+                    <i class="bi bi-egg-fried me-1"></i>Entrées
+                  </button>
+                  <button class="btn-filtre" data-filter="plat" type="button">
+                    <i class="bi bi-cup-hot me-1"></i>Plats
+                  </button>
+                  <button class="btn-filtre" data-filter="dessert" type="button">
+                    <i class="bi bi-cake me-1"></i>Desserts
+                  </button>
+                  <button class="btn-filtre" data-filter="boisson" type="button">
+                    <i class="bi bi-droplet me-1"></i>Boissons
+                  </button>
+                </div>
+                <p id="no-results" class="text-center mt-3 d-none">
+                  Aucun plat ne correspond a votre recherche.
+                </p>
+            </div>
+        </section>
+
+  <section class="menu-section" aria-label="Entrees">
+    <h2 class="section-title">Entrees</h2>
+    <div class="menu">
+      <div class="plat" data-categorie="entree">
+        <img src="images/soup.jpg" alt="soup pour Entrées">
+        <h3>Soup Harira</h3>
+        <span>4000 FCFA</span>
+        <button class="btn-commande">Commander</button>
+      </div>
+      <div class="plat" data-categorie="entree">
+      <img src="images/crevette.jpg" alt="crevettes sautes">
+        <h3>crauvettes sautes</h3>
+        <span>3000 FCFA</span>
+        <button class="btn-commande">Commander</button>
+      </div>
+      <div class="plat" data-categorie="entree">
+      <img src="images/salad.jpg" alt="vermiselle chinois">
+        <h3>vermiselle chinois </h3>
+        <span>2000 FCFA</span>
+        <button class="btn-commande">Commander</button>
+      </div>
+       <div class="plat" data-categorie="entree">
+        <img src="images/allocos.jpg" alt="allocos">
+        <h3>Allocos</h3>
+        <span>2500 FCFA</span>
+        <button class="btn-commande">Commander</button>
+      </div> 
+      <div class="plat" data-categorie="entree">
+        <img src="images/pastelpoisson.jpg" alt="fataya dieun">
+        <h3>Fataya Dieun</h3>
+        <span>1500 FCFA</span>
+        <button class="btn-commande">Commander</button>
+      </div>
+      <div class="plat" data-categorie="entree">
+        <img src="images/pastelviande.jpg" alt="fataya yapp">
+        <h3>Fataya yapp</h3>
+        <span>2000 FCFA</span>
+        <button class="btn-commande">Commander</button>
+      </div>
+      <div class="plat" data-categorie="entree">
+        <img src="images/accara.jpg" alt="accara">
+        <h3>Accara</h3>
+        <span>1000FCFA</span>
+        <button class="btn-commande">Commander</button>
+      </div>
+       <div class="plat" data-categorie="entree">
+        <img src="images/nem.jpg" alt="nem">
+        <h3>Nem Croustillant</h3>
+        <span>4000 FCFA</span>
+        <button class="btn-commande">Commander</button>
+      </div>
+    </div>
+</section>
+
+ <section class="menu-section" aria-label="Plats">
+    <h2 class="section-title">Plats</h2>
+    <div class="menu">
+      <div class="plat" data-categorie="plat">
+        <img src="images/thieb.jpg" alt="thiebdieun">
+        <h3>thiebbou dieun</h3>
+        <span>2000FCFA</span>
+        <button class="btn-commande">Commander</button>
+      </div>
+
+      <div class="plat" data-categorie="plat">
+        <img src="images/thiebguinar.jpg" alt="thiebguinar">
+        <h3>Thiebou Guinar</h3>
+        <span>5000 FCFA</span>
+        <button class="btn-commande">Commander</button>
+      </div>
+
+      <div class="plat" data-categorie="plat">
+        <img src="images/mbakhale.jpg" alt="mbakhal saloum">
+        <h3>Mbakhalou Saloum</h3>
+         <span>3000FCFA</span>
+         <button class="btn-commande">Commander</button>
+      </div> 
+
+      <div class="plat" data-categorie="plat">
+        <img src="images/dekhine.jpg" alt="dekinou yapp">
+        <h3>dekhine bou saff</h3>
+        <span>3500FCFA</span>
+        <button class="btn-commande">Commander</button>
+      </div>
+
+      <div class="plat" data-categorie="plat">
+        <img src="images/athieke.jpg" alt="athieke">
+        <h3>Athieke</h3>
+        <span>2000FCFA</span>
+        <button class="btn-commande">Commander</button>
+      </div>
+
+    <div class="plat" data-categorie="plat">
+        <img src="images/mafee.jpg" alt="mafe">
+        <h3>Mafe yapp</h3>
+        <span>3500 FCFA</span>
+        <button class="btn-commande">Commander</button>
+      </div>
+
+      <div class="plat" data-categorie="plat">
+        <img src="images/soupkandia.jpg" alt="soupkandia">
+        <h3>Soupou Kandia</h3>
+        <span>5000FCFA</span>
+        <button class="btn-commande">Commander</button>
+      </div>
+
+       <div class="plat" data-categorie="plat">
+        <img src="images/thiere.jpg" alt="thiere">
+        <h3>thiere ak niekh</h3>
+        <span>5000 FCFA</span>
+        <button class="btn-commande">Commander</button>
+      </div>
+    </div>
+ </section>
+
+ <section class="menu-section" aria-label="Desserts">
+    <h2 class="section-title">Desserts</h2>
+    <div class="menu">
+      <div class="plat" data-categorie="dessert">
+        <img src="images/verinech.jpg" alt="verine au chocolat">
+        <h3>verine au chocolat</h3>
+        <span>2000 FCFA</span>
+        <button class="btn-commande">Commander</button>
+      </div> 
+
+      <div class="plat" data-categorie="dessert">
+        <img src="images/verinefr.jpg" alt="verine au fraise">
+        <h3>verine au fraise</h3>
+        <span>2000FCFA</span>
+        <button class="btn-commande">Commander</button>
+      </div> 
+      
+      <div class="plat" data-categorie="dessert">
+        <img src="images/cakefr.jpg" alt="cake au fraise">
+        <h3>cake au fraise</h3>
+        <span>2000FCFA</span>
+        <button class="btn-commande">Commander</button>
+      </div> 
+      
+      <div class="plat" data-categorie="dessert">
+        <img src="images/thiakry.jpg" alt="thiakry">
+        <h3>Thiakry ak Sow</h3>
+        <span>1500FCFA</span>
+        <button class="btn-commande">Commander</button>
+      </div> 
+</div>
+</section>
+
+       <section class="menu-section" aria-label="Boissons">
+    <h2 class="section-title">Jus</h2>
+
+    <div class="menu">
+      <div class="plat" data-categorie="boisson">
+        <img src="images/bissap.jpg" alt="jus bissap">
+        <h3>Jus Bissap</h3>
+        <span>1000 FCFA</span>
+        <button class="btn-commande">Commander</button>
+      </div> 
+
+      <div class="plat" data-categorie="boisson">
+        <img src="images/bouy.jpg" alt="jus bouy">
+        <h3>Jus Bouy</h3>
+        <span>1500FCFA</span>
+        <button class="btn-commande">Commander</button>
+      </div> 
+
+      <div class="plat" data-categorie="boisson">
+        <img src="images/carrot.jpg" alt="jus carrot">
+        <h3>Jus Carrot</h3>
+        <span>1000 FCFA</span>
+        <button class="btn-commande">Commander</button>
+      </div> 
+
+      <div class="plat" data-categorie="boisson">
+        <img src="images/coktail.jpg" alt="jus coktail">
+        <h3>Jus Coktail</h3>
+        <span>3000FCFA</span>
+        <button class="btn-commande">Commander</button>
+      </div> 
+      </div>
+  </section>
+  </main>
+<footer class="footer">
+
+  <div class="footer-container footer-small">
+
+    
+    <div class="footer-box footer-brand">
+      <h3>🍽️ Restaurant Sénégalais</h3>
+      <p>Le goût authentique du Sénégal dans votre assiette.</p>
+      <p class="footer-tagline">Cuisine authentique, ambiance chaleureuse et saveurs inoubliables.</p>
+    </div>
+
+    
+    <div class="footer-box footer-social-box">
+      <h3>Suivez-nous</h3>
+      <p class="footer-social-text">Retrouvez nos dernières offres, recettes et événements.</p>
+      <div class="footer-social footer-social-row">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Restaurant Sénégalais - Tous droits réservés</p>
+  </div>
+  <button id="btnTop" aria-label="Retour en haut">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

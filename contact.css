@@ -1,0 +1,272 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f5e6d3;
+    color: #3e2a1d;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #d4a373;
+    color: white;
+    min-height: 70px;
+    gap: 30px;
+}
+
+.header nav {
+    display: flex;
+    gap: 28px;
+    position: absolute;
+    left: 60%;
+    transform: translateX(-50%);
+}
+.header .logo img {
+    height: 100px; 
+    width: 250px;
+    display: block;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.container > h2 {
+    font-size: 2.4rem;
+    text-align: center;
+    color: #9e5344;
+    margin-bottom: 10px;
+}
+
+.container > p {
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    margin-bottom: 60px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #d3c1b0;
+    border-radius: 10px;
+    background-color: #fdf7f1;
+    box-sizing: border-box;
+}
+
+.checkbox {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.checkbox label {
+    white-space: nowrap;
+    
+    
+}
+
+form button {
+    grid-column: 1 / -1;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #9e5344;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #7a3e33;
+}
+
+.contact-section {
+    margin-top: 50px;
+}
+
+.brand {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo-text {
+    font-size: 2.2rem;
+    color: #8b3e2f;
+}
+
+.logo-text span {
+    color: #d4a373;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 25px; 
+    width: 100%;
+}
+
+.info-group {
+    background: #fff;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-group h3 {
+    margin-top: 0;
+    color: #8b3e2f;
+    border-bottom: 2px solid #f5e6d3;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.info-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-group li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-group i {
+    color: #d4a373;
+    width: 20px;
+}
+
+.map-wrapper {
+    margin-top: auto;
+    padding-top: 15px;
+}
+
+.map-wrapper img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+
+.footer {
+    background: linear-gradient(135deg, #5a3e2b 0%, #4a2f1c 100%);
+    color: white;
+    padding: 40px 20px 20px;
+    margin-top: 60px;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-box {
+    flex: 1 1 250px;
+}
+
+.footer-box h3 {
+    color: #d4a373;
+    margin-bottom: 15px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.footer-social a {
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    background: #d4a373;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 850px) {
+    .contact-container, form {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .header nav {
+        position: static;
+        transform: none;
+        left: 0;
+    }
+}
+#btnTop {
+    position: fixed;
+    bottom: 5px;
+    right: 50%;
+    position:center;
+    background: #d4a373;
+    padding: 10px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    
+}
+#btnTop.visible {opacity: 1; visibility: visible;}
+#btnTop:hover{ background: #d4a373;
+  transform: translatey(-4px);
+} 

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Contact - Baobab Gourmand</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo du site"/>
+	</div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">A propos</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Contactez-nous</h2>
+        <p>
+            Le restaurant est ouvert le midi du lundi au samedi, et fermé tous les soirs,
+            le dimanche et jours fériés.
+        </p>
+
+        <form onsubmit="return false;">
+            <input class="input-prenom" type="text" placeholder="Prénom *" required>
+            <input class="input-email" type="email" placeholder="Votre email *" required>
+            <input class="input-nom" type="text" placeholder="Nom *" required>
+            <input class="input-date" type="date" required>
+            <input class="input-tel" type="tel" placeholder="Votre téléphone *" required>
+            <input class="input-couverts" type="number" placeholder="Nb de couverts *" required>
+
+            <div class="checkbox">
+                <input type="checkbox" id="privacy" required>
+                <label for="privacy">J'accepte la politique de confidentialité</label>
+            </div>
+
+            <button type="submit">Envoyer</button>
+        </form>
+
+        <section class="contact-section">
+            <div class="brand">
+                <h1 class="logo-text">Chez <span>Baobab Gourmand</span></h1>
+                <p class="slogan">La vraie cuisine africaine, faite avec amour. Livrée chaud chez vous.</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="info-group">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-phone-alt"></i> 33 100 20 30</li>
+                        <li><i class="fas fa-phone-alt"></i> 77 543 90 09</li>
+                        <li><i class="fas fa-phone-alt"></i> 76 010 50 50</li>
+                        <li><i class="fab fa-whatsapp"></i> WhatsApp</li>
+                    </ul>
+                </div>
+
+                <div class="info-group">
+                    <h3>Notre Localisation</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Quartier Ngor, Dakar, Sénégal</li>
+                        <li><i class="far fa-clock"></i> Lun - Dim : 07h00 – 00h00</li>
+                    </ul>
+                    <div class="map-wrapper">
+                        <img src="images/maps.jpg" alt="carte de Ngor">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h3>🍽️ Restaurant Sénégalais</h3>
+                <p>Le goût authentique de l'Afrique dans votre assiette.</p>
+                <p class="footer-tagline">Cuisine authentique, ambiance chaleureuse.</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Suivez-nous</h3>
+                <p class="footer-social-text">Retrouvez nos dernières offres.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Restaurant Africain - Tous droits réservés</p>
+        </div>
+        <button id="btnTop" aria-label="Retour en haut">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
