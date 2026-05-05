@@ -1,4 +1,4 @@
-# 🍽️ Le Baobab Gourmand
+#  Le Baobab Gourmand
 
 ## Description
 
