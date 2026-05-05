@@ -167,8 +167,8 @@ header .logo img {
         padding: 15px;
     }
     .vedettes .plat {
-        max-width: 350px;
         margin: 0 auto;
+        width:100px;
     }
 }
 .conteneur{
