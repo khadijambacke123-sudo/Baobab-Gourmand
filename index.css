@@ -166,10 +166,6 @@ header .logo img {
     .vedettes .plats {
         padding: 15px;
     }
-    .vedettes .plat {
-        margin: 0 auto;
-        width:100px;
-    }
 }
 .conteneur{
     background-image: url("plat.jpg");
@@ -206,6 +202,8 @@ header .logo img {
 }
 
 .vedettes .plat {
+    
+        .vedettes .plat {
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 7px 20px rgba(0,0,0,0.08);
@@ -215,6 +213,11 @@ header .logo img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    width: 100%;       
+    max-width: 350px;   
+}
+
 }
 
 .plat:hover {
