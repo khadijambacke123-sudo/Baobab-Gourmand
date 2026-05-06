@@ -89,6 +89,15 @@ header .logo img {
     padding: 60px 20px;     
 }
 
+    @media (min-width: 1024px) {
+    .presentation {
+        flex-direction: row;        
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+}
+
 .hero-actions {
     display: flex;
     align-items: center;
