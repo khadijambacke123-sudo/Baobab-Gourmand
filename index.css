@@ -80,20 +80,18 @@ header .logo img {
 .presentation {
     display: flex;
     flex-direction: column;
-    align-items: center;     
+    align-items: flex-start;
     justify-content: center;
 
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 60px 20px;     
+    max-width: 500px;
+    margin-left: 50px;
+    z-index: 1;
 }
 
-    @media (min-width: 1024px) {
+
+   @media (min-width: 1024px) {
     .presentation {
-        flex-direction: row;        
-        justify-content: space-between;
-        align-items: center;
-        gap: 40px;
+        max-width: 600px;
     }
 }
 
@@ -215,8 +213,6 @@ header .logo img {
 }
 
 .vedettes .plat {
-    
-        .vedettes .plat {
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 7px 20px rgba(0,0,0,0.08);
@@ -227,12 +223,9 @@ header .logo img {
     flex-direction: column;
     justify-content: space-between;
 
-    width: 100%;       
-    max-width: 350px;   
+    width: 100%;
+    max-width: 350px;
 }
-
-}
-
 .plat:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 25px rgba(0,0,0,0.15);
