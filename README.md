@@ -41,6 +41,15 @@ Il permet aux utilisateurs de découvrir les plats, en savoir plus sur le restau
 * Formulaire de contact
 * le bouton de retour en haut
 * Design responsive
+* <img width="632" height="812" alt="Capture d&#39;écran 2026-05-07 210736" src="https://github.com/user-attachments/assets/90ecd9c7-ef31-44d8-a9d0-559df6088fcf" />
+
+* <img width="571" height="465" alt="Capture d&#39;écran 2026-05-07 210747" src="https://github.com/user-attachments/assets/9a16d1a8-3919-4be4-b3c2-e40820ae0792" />
+<img width="1160" height="658" alt="Capture d&#39;écran 2026-05-07 210844" src="https://github.com/user-attachments/assets/30ef5009-7471-4824-9287-a9a3de4c7137" />
+
+<img width="1867" height="661" alt="Capture d&#39;écran 2026-05-07 211006" src="https://github.com/user-attachments/assets/06442016-2fc4-4ece-93b8-6f9897186ef1" />
+
+
+
 
 ## Auteurs
 Mame Khary Mbacke
